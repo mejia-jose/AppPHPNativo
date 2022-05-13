@@ -13,7 +13,7 @@ class db {
             $stmt->execute($params);
             $sw= true; 
         } catch (Exception $ex) {
-            echo "ERROR: " . $ex->getMessage();
+            echo "ERROR: ";
             // $sw=json_encode(array("mensaje" => $ex->getMessage()));
             $sw=false;
         }
@@ -31,7 +31,7 @@ class db {
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
             
         } catch (Exception $ex) {
-            echo "ERROR: " . $ex->getMessage();
+            echo "ERROR: ";
         }
     return $row;
     }
@@ -47,7 +47,7 @@ class db {
             $DataRow = $stmt->fetch(PDO::FETCH_ASSOC);
             
         } catch (Exception $ex) {
-            echo "ERROR: " . $ex->getMessage();
+            echo "ERROR: ";
         }
     return $DataRow;
     }
@@ -66,7 +66,7 @@ class db {
                 $data[] = $row;   
             }  
         } catch (Exception $ex) {
-            echo "ERROR: " . $ex->getMessage();
+            echo "ERROR: ";
         }
     return $data;
     }
@@ -85,7 +85,7 @@ class db {
                 $data[] = $row;   
             }  
         } catch (Exception $ex) {
-            echo "ERROR: " . $ex->getMessage();
+            echo "ERROR: ";
         }
     return $data;
     }
