@@ -1,4 +1,4 @@
-# prueba_tecnica
+# AppPHPNativo
  
 Este repositorio se encuentra estructurado de la siguiente manera:
 La carpeta app contiene todo el código de la solución a la prueba: aquí encontrarán los controladores, modelos y las vistas
